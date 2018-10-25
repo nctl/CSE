@@ -33,7 +33,7 @@ print()
 car_name = "Wiebe Mobile"
 car_type = "Tesla"
 car_cylinders = 16
-car_miles_per_gallon = 2
+car_miles_per_gallon = 2.55
 
 print("I have a car called %s. It's pretty nice." % car_name)
 print("It has %d cylinders, but gets %f MPG" % (car_cylinders, car_miles_per_gallon))
@@ -43,4 +43,12 @@ name = input("What is your name?")
 print("Hello %s" % name)
 
 age = input("How old are you?")
-print ("%s" % age)
+print("%s" % age)
+print()
+# Recasting
+real_age = input("How old are you again?")
+hidden_age = real_age + str(5)
+# The str() can convert any non-string line of code, such as an integer, into a string.
+print(hidden_age)
+print()
+print("Look mommy! I learned some Python!")
