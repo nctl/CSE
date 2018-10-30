@@ -1,3 +1,4 @@
+"""
 print("Hello World!")
 
 # Apparently I'm going to slow, so i will speed up
@@ -52,3 +53,42 @@ hidden_age = real_age + str(5)
 print(hidden_age)
 print()
 print("Look mommy! I learned some Python!")
+print()
+"""
+# Multi-line Comments
+"""
+This is a multi-line comment anything in
+between them is commented out.
+"""
+
+
+# Defining Functions
+def say_it():
+    print("I'm back!")
+
+
+say_it()
+say_it()
+say_it()
+print()
+# f(x) = 2x + 3
+
+
+def f(x):
+    print (2*x + 3)
+
+
+f(10)
+f(300)
+f(5000)
+# [**2] indicates raising a number by a power of 2.
+# [**{1/2}] indicates a  square root.
+
+
+def distance(x1, y1, x2, y2):
+    dist = ((x2 - x1)**2 + (y2 - y1)**2)**(1/2)
+    print(dist)
+
+
+# something
+
