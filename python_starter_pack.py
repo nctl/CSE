@@ -90,5 +90,55 @@ def distance(x1, y1, x2, y2):
     print(dist)
 
 
-# something
+# For [i] loops
+for i in (1, 2, 3):
+    say_it()
 
+
+for i in range(5):  # Range(5) gives the numbers 0-4
+    f(i)
+
+
+for i in range(5):
+    print(i**2)
+
+
+# While loops
+a = 0
+while a < 10:
+    print(a)
+    a += 1  # This is the same as [a = a + 1].
+
+
+print()
+"""
+Hints for loops:
+For loops - Use when you know EXACTLY how many iterations.
+While loops - Use when you DON'T KNOW how many iterations.
+"""
+
+# Control statements (if/else/elif statements)
+sunny = True
+if sunny:
+    print("Go home")
+
+
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+your_grade = grade_calc(88)
+print(your_grade)
+
+# Random Numbers
+import random  # This should be on line 1
+print(random.randint(0,100))
