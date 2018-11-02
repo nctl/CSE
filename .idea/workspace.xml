@@ -9,46 +9,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSE$new.coverage" NAME="new Coverage Results" MODIFIED="1541021199219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$_new_1.coverage" NAME=" new_1 Coverage Results" MODIFIED="1541191842708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/CSE$new.coverage" NAME="new Coverage Results" MODIFIED="1541106524408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="354250463">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.35" value="3" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.65" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="6" />
+          <entry key="gitattributes" value="1" />
+          <entry key="mad_lib" value="1" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="6" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="29" />
-          <entry key="py" value="4158" />
+          <entry key="dummy" value="54" />
+          <entry key="py" value="5033" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="2870" />
-          <entry key="Scratch" value="1288" />
+          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="Python" value="3516" />
+          <entry key="Scratch" value="1517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -60,22 +65,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+            <state relative-caret-position="-10">
+              <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
               <folding>
-                <marker date="1541021958618" expanded="true" signature="1471:1495" ph="..." />
-                <marker date="1541021958618" expanded="true" signature="1559:1580" ph="..." />
-                <marker date="1541021958618" expanded="true" signature="2311:2316" ph="..." />
+                <marker date="1541107168840" expanded="true" signature="1471:1495" ph="..." />
+                <marker date="1541107168840" expanded="true" signature="1559:1580" ph="..." />
+                <marker date="1541107168840" expanded="true" signature="2311:2316" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/mad_libs.py">
+        <entry file="file://$PROJECT_DIR$/EduardoMartinez_guess_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="32" column="103" lean-forward="true" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -97,8 +102,10 @@
       <list>
         <option value="$PROJECT_DIR$/scratch.py" />
         <option value="$PROJECT_DIR$/new.py" />
-        <option value="$PROJECT_DIR$/python_starter_pack.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/mad_libs.py" />
+        <option value="$PROJECT_DIR$/mad_libs.py" />
+        <option value="$PROJECT_DIR$/python_starter_pack.py" />
+        <option value="$PROJECT_DIR$/EduardoMartinez_guess_game.py" />
       </list>
     </option>
   </component>
@@ -108,7 +115,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -119,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,16 +138,10 @@
               <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
-            <path>
-              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,8 +167,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python. new_1">
+    <configuration name=" new_1" type="PythonConfigurationType" factoryName="Python">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\nctl\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="EduardoMartinez_guess_game" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,7 +203,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\nctl\Documents\CSE\python_starter_pack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_starter_pack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,9 +212,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python. new_1" />
+      <item itemvalue="Python.Tutorial" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.new" />
+        <item itemvalue="Python.Tutorial" />
       </list>
     </recent_temporary>
   </component>
@@ -208,15 +236,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29004666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3628159" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -233,6 +260,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -250,22 +300,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mad_lib" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/mad_libs.py" />
+    <entry file="file://$PROJECT_DIR$/EduardoMartinez_mad_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+        <state relative-caret-position="-10">
+          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
-            <marker date="1541021958618" expanded="true" signature="1471:1495" ph="..." />
-            <marker date="1541021958618" expanded="true" signature="1559:1580" ph="..." />
-            <marker date="1541021958618" expanded="true" signature="2311:2316" ph="..." />
+            <marker date="1541107168840" expanded="true" signature="1471:1495" ph="..." />
+            <marker date="1541107168840" expanded="true" signature="1559:1580" ph="..." />
+            <marker date="1541107168840" expanded="true" signature="2311:2316" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/mad_libs.py">
+    <entry file="file://$PROJECT_DIR$/EduardoMartinez_guess_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="103" lean-forward="true" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

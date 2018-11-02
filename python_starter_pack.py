@@ -138,7 +138,16 @@ def grade_calc(percentage):
 
 your_grade = grade_calc(88)
 print(your_grade)
-
+"""
 # Random Numbers
 import random  # This should be on line 1
-print(random.randint(0,100))
+print(random.randint(0, 100))
+"""
+# Equality statements
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)  # [!=] means NOT equal to
+
+# a = 3 | [a] is set to 3.
+# a == 3 | is [a] equal to 3?
