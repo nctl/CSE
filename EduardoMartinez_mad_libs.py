@@ -13,10 +13,10 @@ location_3 = input("Give me a greater location.")
 person_2 = input("Give the name of a person.")
 banned_verb = input("Give me a verb ending in [ing].")
 verb_2 = input("Give me a verb.")
-animal_1 = input("Give me an animal")
-plant_1 = input("Give me a plant")
-person_3 = input("Give me the name of a person")
-location_4 = input("Give me a location")
+animal_1 = input("Give me an animal.")
+plant_1 = input("Give me a plant.")
+person_3 = input("Give me the name of a person.")
+location_4 = input("Give me a location.")
 
 # Now publish this document!
 
