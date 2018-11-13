@@ -52,16 +52,13 @@ hidden_age = real_age + str(5)
 # The str() can convert any non-string line of code, such as an integer, into a string.
 print(hidden_age)
 print()
-print("Look mommy! I learned some Python!")
-print()
 """
 # Multi-line Comments
 """
 This is a multi-line comment anything in
 between them is commented out.
 """
-
-
+"""
 # Defining Functions
 def say_it():
     print("I'm back!")
@@ -111,11 +108,9 @@ while a < 10:
 
 
 print()
-"""
 Hints for loops:
 For loops - Use when you know EXACTLY how many iterations.
 While loops - Use when you DON'T KNOW how many iterations.
-"""
 
 # Control statements (if/else/elif statements)
 sunny = True
@@ -138,11 +133,12 @@ def grade_calc(percentage):
 
 your_grade = grade_calc(88)
 print(your_grade)
-"""
+print()
+
 # Random Numbers
 import random  # This should be on line 1
 print(random.randint(0, 100))
-"""
+
 # Equality statements
 print(5 > 3)
 print(5 >= 3)
@@ -152,4 +148,5 @@ print(3 != 4)  # [!=] means NOT equal to
 # a = 3 | [a] is set to 3.
 # a == 3 | is [a] equal to 3?
 
-# NEW
+# End
+"""
