@@ -146,7 +146,31 @@ print(3 == 3)
 print(3 != 4)  # [!=] means NOT equal to
 
 # a = 3 | [a] is set to 3.
-# a == 3 | is [a] equal to 3?
+# a == 3 | is [a] equal to 3? """
 
-# End
-"""
+# O-------------O--------------O--------------O-------------O-------------O--------------O-------------O #
+
+# Creating a list
+fruit = ['apple', 'orange', 'peach', 'watermelon',
+         'grape', 'pineapple', 'strawberry']
+
+# Pulling items from a list
+print(fruit[1])  # Remember to start counting from zero
+
+# Getting the length of a list
+print("This list contains %d entries." % len(fruit))  # len() is short for "length"
+
+# Modifying Lists
+fruit[4] = "banana"
+print(fruit)
+
+# Looping trough lists
+for item in fruit:  # This goes through all items in a list once in order
+    print(item)
+
+""" CONGRATULATIONS! YOU REACHED THE MIDPOINT! """
+
+# Pull the LAST item in a list
+print("This last item in the list is %s" % fruit[len(fruit) - 1])
+
+# ---------------------------------------------------------------------------------------------------#
