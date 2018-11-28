@@ -148,8 +148,8 @@ print(3 != 4)  # [!=] means NOT equal to
 # a = 3 | [a] is set to 3.
 # a == 3 | is [a] equal to 3? """
 
-# O-------------O--------------O--------------O-------------O-------------O--------------O-------------O #
-
+# O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O #
+"""
 # Creating a list
 fruit = ['apple', 'orange', 'peach', 'watermelon',
          'grape', 'pineapple', 'strawberry']
@@ -168,9 +168,56 @@ print(fruit)
 for item in fruit:  # This goes through all items in a list once in order
     print(item)
 
+# Pull the LAST item in a list
+print("The last item in the list is %s" % fruit[len(fruit) - 1])
+
+# chicken tastes bad
+# ^ this is a lie ^
+# ^ this is also a lie ^
+# i liek chikin' 4 rael"""
+
 """ CONGRATULATIONS! YOU REACHED THE MIDPOINT! """
 
-# Pull the LAST item in a list
-print("This last item in the list is %s" % fruit[len(fruit) - 1])
+food = ['beef', 'potatoes', 'bread', 'CHICKEN', 'oranges', 'corn',
+        'fish', 'pasta', 'lettuce', 'crab', 'mushrooms', 'rice']
 
-# ---------------------------------------------------------------------------------------------------#
+# Slicing lists
+print(food[2:5])  # Excludes the last number.
+print(food[3:4])
+print(food[10:])  # Starts at index 10 and stops at the very end of the list.
+print(food[:5])  # Goes up to (but not at) index 5.
+
+# Adding entries to a list I (at the end)
+food.append("cake")
+food.append("pizza")
+print(food)
+# Everything is in the form Object.method(parameters)
+
+# Adding entries to a list II (anywhere)
+food.insert(2, "tomatoes")  # In here, the "2" in [2, tomatoes] represents position
+print(food)
+
+# Removing entries from a list I
+food.remove("corn")
+food.remove("lettuce")
+print(food)
+
+# Removing entries from a list II
+# Sometimes, you don't know what is in a list, but you know
+# You want to get rid of something from a list.
+food.pop(0)  # [.pop] means "remove"
+print(food)  # Notice that "beef" is no longer in the list as it was at index 0.
+
+# Finding things in a list
+print(food.index("CHICKEN"))  # Gives the index ID of the item
+
+# AVOID [()] AT ALL COSTS WHEN MAKING A LIST
+
+""" HOMESTRETCH BOIS; LETS KEEP GOING AND FINISH THIS GUIDE."""
+
+# Converting a list
+string2 = "turquoise"
+list2 = list(string2)
+print(list2)
+
+# Changing back into a string
