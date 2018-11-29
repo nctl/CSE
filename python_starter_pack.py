@@ -147,7 +147,6 @@ print(3 != 4)  # [!=] means NOT equal to
 
 # a = 3 | [a] is set to 3.
 # a == 3 | is [a] equal to 3? """
-
 # O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O-----O #
 """
 # Creating a list
@@ -174,9 +173,7 @@ print("The last item in the list is %s" % fruit[len(fruit) - 1])
 # chicken tastes bad
 # ^ this is a lie ^
 # ^ this is also a lie ^
-# i liek chikin' 4 rael"""
-
-""" CONGRATULATIONS! YOU REACHED THE MIDPOINT! """
+# i liek chikin' 4 rael
 
 food = ['beef', 'potatoes', 'bread', 'CHICKEN', 'oranges', 'corn',
         'fish', 'pasta', 'lettuce', 'crab', 'mushrooms', 'rice']
@@ -211,13 +208,18 @@ print(food)  # Notice that "beef" is no longer in the list as it was at index 0.
 # Finding things in a list
 print(food.index("CHICKEN"))  # Gives the index ID of the item
 
-# AVOID [()] AT ALL COSTS WHEN MAKING A LIST
+# AVOID [()] AT ALL COSTS WHEN MAKING A LIST"""
 
-""" HOMESTRETCH BOIS; LETS KEEP GOING AND FINISH THIS GUIDE."""
+# Changing a string into a list
+string1 = "turquoise"
+list1 = list(string1)  # "split" into letters
+print(list1)
 
-# Converting a list
-string2 = "turquoise"
-list2 = list(string2)
-print(list2)
+# Hangman Hints
+for i in range(len(list1)):
+    if list1[i] == "u":  # "i" goes through all indices.
+        list1.pop(i)
+        list1.insert(i, "*")   # STOP BEING A BAD-MOUTH PYTHON!
 
-# Changing back into a string
+# Changing a list into a string
+print("".join(list1))  # revert back into a string
