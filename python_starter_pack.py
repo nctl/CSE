@@ -209,7 +209,7 @@ print(food)  # Notice that "beef" is no longer in the list as it was at index 0.
 print(food.index("CHICKEN"))  # Gives the index ID of the item
 
 # AVOID [()] AT ALL COSTS WHEN MAKING A LIST"""
-
+"""
 # Changing a string into a list
 string1 = "turquoise"
 list1 = list(string1)  # "split" into letters
@@ -223,3 +223,4 @@ for i in range(len(list1)):
 
 # Changing a list into a string
 print("".join(list1))  # revert back into a string
+"""
