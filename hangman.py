@@ -7,15 +7,20 @@ for i in range(len(list1)):
         list1.insert(i, "*")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
-word = []
+word = ['E', 'X', 'C', 'E', 'L', 'L', 'E', 'N', 'T']
 letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 dead_letters = []  # Letter choices that have been exhausted.
 lives = 9  # This represents how many limbs Hangman has left.
 print("All letter choices must be capital")
 while lives > 0:
-    print(dead_letters)
+    print("Used letter(s): %s" % dead_letters)
     active_choice = input("Choose a letter.")
+    dead_letters.append(active_choice)
+    while active_choice == dead_letters and active_choice != letters:
+        print("You have already chosen this letter.")
+        active_choice = input("Choose a letter.")
+
     for i in range(len(word)):
         if word[i] == active_choice:
             word.pop(i)
@@ -26,7 +31,5 @@ while lives > 0:
             lives -= 1
             print("The letter (%s) is not in the word. Lives remaining: %d" % (active_choice, lives))
     letters.remove(active_choice)
-    dead_letters.append(active_choice)
-    print("Used letter(s): %s" % dead_letters)
 
 print("filler")

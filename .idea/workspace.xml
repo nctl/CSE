@@ -13,17 +13,19 @@
     <SUITE FILE_PATH="coverage/CSE$_new_1.coverage" NAME="guess Coverage Results" MODIFIED="1541455405146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$7s.coverage" NAME="7s Coverage Results" MODIFIED="1542146410186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
     <SUITE FILE_PATH="coverage/CSE$FIX_IT_USER_.coverage" NAME="FIX_IT_USER! Coverage Results" MODIFIED="1543616701531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$hangmanOrYouWillBeTheHangman.coverage" NAME="hangmanOrYouWillBeTheHangman Coverage Results" MODIFIED="1543874828058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$exp_list.coverage" NAME="exp.list Coverage Results" MODIFIED="1543442946704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$new.coverage" NAME="new Coverage Results" MODIFIED="1541106524408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$madlibs2.coverage" NAME="madlibs2 Coverage Results" MODIFIED="1543444571342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
-    <SUITE FILE_PATH="coverage/CSE$starterPack.coverage" NAME="starterPack Coverage Results" MODIFIED="1543616689731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$starterPack.coverage" NAME="winner Coverage Results" MODIFIED="1543875339250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Lucky7s.coverage" NAME="Lucky7s Coverage Results" MODIFIED="1541803204755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="354250463">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="29" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
@@ -34,6 +36,7 @@
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="2" />
+          <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.59" value="1" />
@@ -41,34 +44,34 @@
           <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitattributes" value="1" />
           <entry key="mad_lib" value="1" />
-          <entry key="py" value="27" />
+          <entry key="py" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="24" />
+          <entry key="Python" value="25" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="88" />
-          <entry key="py" value="13076" />
+          <entry key="dummy" value="91" />
+          <entry key="py" value="13662" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="92" />
-          <entry key="Python" value="11559" />
+          <entry key="PLAIN_TEXT" value="95" />
+          <entry key="Python" value="12145" />
           <entry key="Scratch" value="1517" />
         </counts>
       </usages-collector>
@@ -84,26 +87,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="225" column="3" selection-start-line="225" selection-start-column="3" selection-end-line="225" selection-end-column="3" />
+            <state relative-caret-position="446">
+              <caret line="235" selection-start-line="235" selection-end-line="235" />
+              <folding>
+                <marker date="1543874966941" expanded="true" signature="5201:5206" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hangman(Unused).py">
+        <entry file="file://$PROJECT_DIR$/hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Archive/EduardoMartinez_mad_libs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="256">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -140,9 +137,12 @@
         <option value="$PROJECT_DIR$/Archive/EduardoMartinez_Lucky7s.py" />
         <option value="$PROJECT_DIR$/experimeitng with list.py" />
         <option value="$PROJECT_DIR$/EduardoMartinez_MORE_MAD_libs.py" />
-        <option value="$PROJECT_DIR$/python_starter_pack.py" />
         <option value="$PROJECT_DIR$/FIX_IT_USER!.py" />
         <option value="$PROJECT_DIR$/hangman(Unused).py" />
+        <option value="$PROJECT_DIR$/hangmanr.py" />
+        <option value="$PROJECT_DIR$/python_starter_pack.py" />
+        <option value="$PROJECT_DIR$/challenges.py" />
+        <option value="$PROJECT_DIR$/hangman.py" />
       </list>
     </option>
   </component>
@@ -180,7 +180,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python_starter_pack.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/challenges.py" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -204,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hangmanOrYouWillBeTheHangman">
+  <component name="RunManager" selected="Python.winner">
     <configuration name="hangmanOrYouWillBeTheHangman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +218,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hangman(Unused).py" />
+      <option name="SCRIPT_NAME" value="C:\Users\nctl\Documents\CSE\hangman.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,7 +227,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="starterPack" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="winner" type="PythonConfigurationType" factoryName="Python">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,7 +240,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_starter_pack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,7 +250,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.starterPack" />
+      <item itemvalue="Python.winner" />
       <item itemvalue="Python.hangmanOrYouWillBeTheHangman" />
     </list>
     <recent_temporary>
@@ -283,10 +283,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5026316" side_tool="true" weight="0.31996974" />
       <window_info id="Favorites" order="1" sideWeight="0.5032787" side_tool="true" weight="0.3570348" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4967213" visible="true" weight="0.37367624" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4967213" visible="true" weight="0.3857791" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3737705" />
@@ -382,24 +383,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="225" column="3" selection-start-line="225" selection-start-column="3" selection-end-line="225" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Archive/EduardoMartinez_mad_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
+        <state relative-caret-position="153">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangman(Unused).py">
+    <entry file="file://$PROJECT_DIR$/challenges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+          <folding>
+            <marker date="1543874966941" expanded="true" signature="5201:5206" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>

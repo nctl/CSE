@@ -209,18 +209,27 @@ print(food)  # Notice that "beef" is no longer in the list as it was at index 0.
 print(food.index("CHICKEN"))  # Gives the index ID of the item
 
 # AVOID [()] AT ALL COSTS WHEN MAKING A LIST"""
-"""
+
 # Changing a string into a list
 string1 = "turquoise"
 list1 = list(string1)  # "split" into letters
 print(list1)
 
-# Hangman Hints
+# Hangman Hint
 for i in range(len(list1)):
     if list1[i] == "u":  # "i" goes through all indices.
         list1.pop(i)
-        list1.insert(i, "*")   # STOP BEING A BAD-MOUTH PYTHON!
+        list1.insert(i, "*")  # STOP BEING A BAD-MOUTH PYTHON!
 
 # Changing a list into a string
 print("".join(list1))  # revert back into a string
-"""
+
+
+# Function Notes
+# X ** 2 is the same as X to the second power.
+# Y ** 1/2 is the same as taking Y's square root.
+def pythagorean(a, b):
+    return (a ** 2 + b ** 2) ** (1 / 2)
+
+
+print(pythagorean(3, 4))
