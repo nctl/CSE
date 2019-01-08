@@ -4,6 +4,7 @@
 """ TO BE ANNOUNCED LATER """
 
 
+
 # Challenge Level 2
 """ Write a Python program to find whether a given number (from the user) is even or odd. """
 
@@ -22,3 +23,78 @@
 
 # Backup Challenge
 """ TO BE ANNOUNCED LATER """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
