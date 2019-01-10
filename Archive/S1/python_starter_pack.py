@@ -224,12 +224,3 @@ for i in range(len(list1)):
 # Changing a list into a string
 print("".join(list1))  # revert back into a string
 
-
-# Function Notes
-# X ** 2 is the same as X to the second power.
-# Y ** 1/2 is the same as taking Y's square root.
-def pythagorean(a, b):
-    return (a ** 2 + b ** 2) ** (1 / 2)
-
-
-print(pythagorean(3, 4))

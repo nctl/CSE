@@ -13,26 +13,36 @@
     <SUITE FILE_PATH="coverage/CSE$_new_1.coverage" NAME="guess Coverage Results" MODIFIED="1541455405146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$NEW_NOTES.coverage" NAME="NEW_NOTES Coverage Results" MODIFIED="1546986245993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$7s.coverage" NAME="7s Coverage Results" MODIFIED="1542146410186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/CSE$FIX_IT_USER_.coverage" NAME="FIX_IT_USER! Coverage Results" MODIFIED="1543616701531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$hangmanOrYouWillBeTheHangman.coverage" NAME="hangmanOrYouWillBeTheHangman Coverage Results" MODIFIED="1543874828058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$exp_list.coverage" NAME="exp.list Coverage Results" MODIFIED="1543442946704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$new.coverage" NAME="new Coverage Results" MODIFIED="1541106524408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$madlibs2.coverage" NAME="madlibs2 Coverage Results" MODIFIED="1543444571342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
     <SUITE FILE_PATH="coverage/CSE$starterPack.coverage" NAME="winner Coverage Results" MODIFIED="1543875339250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/CSE$exp_list.coverage" NAME="exp.list Coverage Results" MODIFIED="1543442946704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$new.coverage" NAME="new Coverage Results" MODIFIED="1541106524408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$madlibs2.coverage" NAME="madlibs2 Coverage Results" MODIFIED="1543444571342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
+    <SUITE FILE_PATH="coverage/CSE$starterPack.coverage" NAME="hangmanOrYouWillBeTheHangman Coverage Results" MODIFIED="1543529819549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
     <SUITE FILE_PATH="coverage/CSE$Lucky7s.coverage" NAME="Lucky7s Coverage Results" MODIFIED="1541803204755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="354250463">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="31" />
           <entry key="project.open.time.0" value="1" />
+=======
+          <entry key="project.closed" value="26" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.35" value="4" />
-          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
@@ -46,34 +56,56 @@
           <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.94" value="1" />
+<<<<<<< HEAD
           <entry key="project.opened" value="31" />
+=======
+          <entry key="project.opened" value="27" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitattributes" value="1" />
           <entry key="mad_lib" value="1" />
+<<<<<<< HEAD
           <entry key="py" value="29" />
+=======
+          <entry key="py" value="22" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
+<<<<<<< HEAD
           <entry key="Python" value="26" />
+=======
+          <entry key="Python" value="19" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="dummy" value="91" />
           <entry key="py" value="14400" />
+=======
+          <entry key="dummy" value="54" />
+          <entry key="py" value="12370" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="PLAIN_TEXT" value="95" />
           <entry key="Python" value="12883" />
+=======
+          <entry key="PLAIN_TEXT" value="58" />
+          <entry key="Python" value="10853" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
           <entry key="Scratch" value="1517" />
         </counts>
       </usages-collector>
@@ -119,10 +151,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/S2_python_notes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret lean-forward="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/python_starter_pack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="224" column="50" lean-forward="true" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hangman(Unused).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
             </state>
           </provider>
         </entry>
@@ -159,6 +207,7 @@
         <option value="$PROJECT_DIR$/Archive/EduardoMartinez_Lucky7s.py" />
         <option value="$PROJECT_DIR$/experimeitng with list.py" />
         <option value="$PROJECT_DIR$/EduardoMartinez_MORE_MAD_libs.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/FIX_IT_USER!.py" />
         <option value="$PROJECT_DIR$/hangman(Unused).py" />
         <option value="$PROJECT_DIR$/hangmanr.py" />
@@ -167,6 +216,10 @@
         <option value="$PROJECT_DIR$/challenges.py" />
         <option value="$PROJECT_DIR$/python_notes_2.py" />
         <option value="$PROJECT_DIR$/S2_python_notes.py" />
+=======
+        <option value="$PROJECT_DIR$/hangman(Unused).py" />
+        <option value="$PROJECT_DIR$/python_starter_pack.py" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
       </list>
     </option>
   </component>
@@ -176,7 +229,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-133" />
     <option name="y" value="14" />
     <option name="width" value="1357" />
@@ -277,11 +330,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5026316" side_tool="true" weight="0.31996974" />
       <window_info id="Favorites" order="1" sideWeight="0.5032787" side_tool="true" weight="0.3570348" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4967213" visible="true" weight="0.40998486" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4967213" visible="true" weight="0.36762482" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3737705" />
@@ -372,6 +430,13 @@
     <entry file="file://$PROJECT_DIR$/Archive/S1/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Archive/EduardoMartinez_mad_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RPS.py" />
     <entry file="file://$PROJECT_DIR$/Archive/S1/EduardoMartinez_guess_game.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -384,20 +449,25 @@
     <entry file="file://$PROJECT_DIR$/experimeitng with list.py" />
     <entry file="file://$PROJECT_DIR$/Archive/S1/EduardoMartinez_MORE_MAD_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Archive/S1/EduardoMartinez_fixed_it.py">
+=======
+    <entry file="file://$PROJECT_DIR$/hangman(Unused).py">
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Archive/S1/EduardoMartinez_mad_libs.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="153">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
@@ -436,6 +506,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+=======
+        <state relative-caret-position="429">
+          <caret line="224" column="50" lean-forward="true" selection-start-line="224" selection-start-column="50" selection-end-line="224" selection-end-column="50" />
+>>>>>>> parent of 6ba5082... I CAN FIX IT!
         </state>
       </provider>
     </entry>
