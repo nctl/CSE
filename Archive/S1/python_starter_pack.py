@@ -157,7 +157,7 @@ fruit = ['apple', 'orange', 'peach', 'watermelon',
 print(fruit[1])  # Remember to start counting from zero
 
 # Getting the length of a list
-print("This list contains %d entries." % len(fruit))  # len() is short for "length"
+print("This list contains %d entries." % len(fruit)  # len() is short for "length"
 
 # Modifying Lists
 fruit[4] = "banana"
@@ -207,8 +207,7 @@ print(food)  # Notice that "beef" is no longer in the list as it was at index 0.
 
 # Finding things in a list
 print(food.index("CHICKEN"))  # Gives the index ID of the item
-
-# AVOID [()] AT ALL COSTS WHEN MAKING A LIST"""
+"""
 
 # Changing a string into a list
 string1 = "turquoise"
@@ -219,7 +218,7 @@ print(list1)
 for i in range(len(list1)):
     if list1[i] == "u":  # "i" goes through all indices.
         list1.pop(i)
-        list1.insert(i, "*")  # STOP BEING A BAD-MOUTH PYTHON!
+        list1.insert(i, "*")
 
 # Changing a list into a string
 print("".join(list1))  # revert back into a string
