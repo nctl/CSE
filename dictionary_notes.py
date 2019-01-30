@@ -43,16 +43,27 @@ complex_dictionary = nested_dictionary = {
     "NJ": {
         "NAME": "New Jersey",
         "POPULATION": 9000000,
-        "CITIES": []
+        "CITIES": ["Newark",
+                   "Trenton",
+                   "Princeton"]
     },
     "NY": {
         "NAME": "New York",
         "POPULATION": 1950000,
-        "CITIES": []
+        "CITIES": ["New York City",
+                   "Rockester",
+                   "Buffalo"]
     },
     "WI": {
         "NAME": "Wisconsin",
-        "POPULATION": 550000
-        "CITIES": []
+        "POPULATION": 550000,
+        "CITIES": ["Madison",
+                   "Milwaukee",
+                   "Green Bay"]
      }
 }
+
+print(complex_dictionary["NY"]["CITIES"][0])
+print(complex_dictionary["NJ"]["CITIES"][2])
+print(complex_dictionary.keys())
+print(complex_dictionary.items())
