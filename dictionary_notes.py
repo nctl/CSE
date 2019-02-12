@@ -67,3 +67,9 @@ print(complex_dictionary["NY"]["CITIES"][0])
 print(complex_dictionary["NJ"]["CITIES"][2])
 print(complex_dictionary.keys())
 print(complex_dictionary.items())
+
+# OTHER NOTES
+
+states["MN"] = "Mississippi?"  # no
+
+states["MN"] = "Minnesota"
