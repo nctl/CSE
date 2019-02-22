@@ -1,4 +1,10 @@
-import special_random
+import random
+
+
+class Random:
+    @staticmethod
+    def special_random():
+        return random.randint(1, 100)
 
 
 class Laptop(object):
@@ -43,8 +49,8 @@ class Laptop(object):
     def use(self, time):
         self.battery_remaining -= time
 
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
 
 my_computer = Laptop("1920x1080", 10000, "Black")
 your_computer = Laptop("240p", 16, "Orange")
@@ -56,8 +62,4 @@ my_computer.charge(20)
 my_computer.charge(100)
 my_computer.smash()
 my_computer.charge(20)
-
 default_computer.charge(20)
-
-# CREATE AN OBJECT CLASS WITH 2 OR MORE OBJECTS.
-# THEN GIVE EACH OBJECT 3 OR MORE METHODS
