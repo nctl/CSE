@@ -14,7 +14,8 @@ R19A = Room("Mr. Wiebe's Room")
 parking_lot = Room("The Parking Lot", None, R19A)
 R19A.north = parking_lot
 """
-
+#  THIS MAP IS INDEPENDENT FROM THE MAIN PROJECT AND IS SOLELY FOR THE USE OF NOTETAKING
+"""
 library = Room("Library", None, None, None, None, "Desc.")
 quad = Room("Name", None, None, None, None, "Desc.")
 N40 = Room("N40", None, None, None, None, "Desc.")
@@ -39,42 +40,43 @@ south_hall.west = cafe
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, starting_location=office):
         self.inventory = []
         self.current_location = starting_location
 
     def move(self, new_location):
-        """
+        
 
         :param new_location:
-        """
+        
 
     def find_room(self, direction):
-        """
+        
 
         :param direction:
         :return: north, south, east, west
-        """
+        
         return getattr(self.current_location, direction)
 
 
-player = Player(None)
+player = Player()
 
 
 # Controller
 directions = ["north", "south", "east", "west", "up", "down"]
-playing = True
-while playing:
+active = True
+while active:
     print(player.current_location.name)
-
+    print(player.current_location.description)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
-        playing = False
+        active = False
     elif command in directions:
         try:
-            room_name = current_node["PATHS"][command]
-            current_node = world_map[room_name]
+            next_room = player.find_room(command)
+            player.move(next_room)
         except KeyError:
-            print("I can't go that way.")
+            print("You can't go there.")
     else:
         print("Command not recognized.")
+"""
