@@ -14,8 +14,7 @@ R19A = Room("Mr. Wiebe's Room")
 parking_lot = Room("The Parking Lot", None, R19A)
 R19A.north = parking_lot
 """
-#  THIS MAP IS INDEPENDENT FROM THE MAIN PROJECT AND IS SOLELY FOR THE USE OF NOTETAKING
-"""
+
 library = Room("Library", None, None, None, None, "Desc.")
 quad = Room("Name", None, None, None, None, "Desc.")
 N40 = Room("N40", None, None, None, None, "Desc.")
@@ -46,21 +45,21 @@ class Player(object):
 
     def move(self, new_location):
         
-
+        """
         :param new_location:
-        
+        """
 
     def find_room(self, direction):
-        
 
+        """
         :param direction:
         :return: north, south, east, west
         
         return getattr(self.current_location, direction)
+        """
 
 
 player = Player()
-
 
 # Controller
 directions = ["north", "south", "east", "west", "up", "down"]
@@ -75,8 +74,8 @@ while active:
         try:
             next_room = player.find_room(command)
             player.move(next_room)
+
         except KeyError:
             print("You can't go there.")
     else:
         print("Command not recognized.")
-"""
