@@ -14,9 +14,44 @@ class Melee(Weapon):
         super(Melee, self).__init__(name, damage)
 
 
+class WoodenSword(Melee):
+    def __init__(self):
+        super(WoodenSword, self).__init__("Wooden Sword", 6)
+
+
+class SharpSword(Melee):
+    def __init__(self):
+        super(SharpSword, self).__init__("Sharp Sword", 14)
+
+
+class FlameSword(Melee):
+    def __init__(self):
+        super(FlameSword, self).__init__("Flame Sword", 23)
+
+
+class LegendarySword(Melee):
+    def __init__(self):
+        super(LegendarySword, self).__init__("Legendary Sword", 30)
+
+
 class Ranged(Weapon):
     def __init__(self, name, damage):
         super(Ranged, self).__init__(name, damage)
+
+
+class OldBow(Ranged):
+    def __init__(self):
+        super(OldBow, self).__init__("Old Bow", 9)
+
+
+class KnightBow(Ranged):
+    def __init__(self):
+        super(KnightBow, self).__init__("Knight's Bow", 20)
+
+
+class ApBow(Ranged):
+    def __init__(self):
+        super(ApBow, self).__init__("Armour Piercing Bow", 28)
 
 
 class Armour(Item):
@@ -30,26 +65,44 @@ class Helmet(Armour):
         super(Helmet, self).__init__(name, defense)
 
 
+class LeatherHelmet(Helmet):
+    def __init__(self):
+        super(LeatherHelmet, self).__init__("Leather Helmet", 3)
+
+
+class IronHelmet(Helmet):
+    def __init__(self):
+        super(IronHelmet, self).__init__("Iron Helmet", 5)
+
+
+class FortifiedHelmet(Helmet):
+    def __init__(self):
+        super(FortifiedHelmet, self).__init__("Fortified Helmet", 11)
+
+
 class Chestplate(Armour):
     def __init__(self, name, defense):
         super(Chestplate, self).__init__(name, defense)
 
 
+class LeatherChestplate(Chestplate):
+    def __init__(self):
+        super(LeatherChestplate, self).__init__("Leather Chestplate", 7)
+
+
+class IronChestplate(Chestplate):
+    def __init__(self):
+        super(IronChestplate, self).__init__("Iron Chestplate", 12)
+
+
+class FortifiedChestplate(Chestplate):
+    def __init__(self):
+        super(FortifiedChestplate, self).__init__("Fortified Chestplate", 20)
+
+
 class Shield(Armour):
     def __init__(self, name, defense):
         super(Shield, self).__init__(name, defense)
-
-
-class GiantShield(Shield):
-    def __init__(self, name, defense):
-        super(GiantShield, self).__init__(name, defense)
-        self.defense = 10
-
-
-class RustyShield(Shield):
-    def __init__(self, name, defense):
-        super(RustyShield, self).__init__(name, defense)
-        self.defense = 3
 
 
 class Consumable(Item):
@@ -64,44 +117,29 @@ class Healing(Consumable):
         self.hp_recovered = hp_recovered
 
 
+class HealthPotion(Healing):
+    def __init__(self):
+        super(HealthPotion, self).__init__("Health Potion", 5, 50)
+
+
+class SuperHealthPotion(Healing):
+    def __init__(self):
+        super(SuperHealthPotion, self).__init__("Super Health Potion", 3, 120)
+
+
 # ----------------------------------------------------------------------------------------------------------------#
-wooden_sword = Melee("Wooden Sword", 6)
-sharp_sword = Melee("Sharp Sword", 14)
-flame_sword = Melee("Flame Sword", 19)
-legendary_sword = ("Legendary Sword", 30)
-old_bow = Ranged("Old Bow", 9)
-knight_bow = Ranged("Knight's Bow", 20)
-armour_piercing_bow = Ranged("Armour Piercing Bow", 28)
-leather_helmet = Helmet("Leather Helmet", 3)
-iron_helmet = Helmet("Iron Helmet", 5)
-fortified_helmet = Helmet("Fortified Helmet", 11)
-leather_chestplate = Chestplate("Leather Chestplate", 7)
-iron_chestplate = Chestplate("Iron Chestplate", 12)
-fortified_chestplate = Chestplate("Fortified Chestplate", 20)
-health_potion = Healing("Health Potion", 5, 50)
-super_health_potion = Healing("Super Health Potion", 3, 120)
-# ----------------------------------------------------------------------------------------------------------------#
-
-
-class Character(object):
-    def __init__(self, name, health, weapon, armour):
-        self.name = name
-        self.health = health
-        self.weapon = weapon
-        self.armour = armour
-
-    def take_damage(self, damage):
-        if damage < self.armour.defense:
-            print("No damage is done.")
-        else:
-            self.health -= damage - self.armour.defense
-            if self.health <= 0:
-                self.health = 0
-                print("%s has fallen" % self.name)
-        print("%s has %d health left" % (self.name, self.health))
-
-    def attack(self, target):
-        print("%s attacks %s for %d damage" %
-              (self.name, target.name, self.weapon.damage))
-        target.take_damage(self.weapon.damage)
-
+wooden_sword = WoodenSword
+sharp_sword = SharpSword
+flame_sword = FlameSword
+legendary_sword = LegendarySword
+old_bow = OldBow
+knight_bow = KnightBow
+armour_piercing_bow = ApBow
+leather_helmet = LeatherHelmet
+iron_helmet = IronHelmet
+fortified_helmet = FortifiedHelmet
+leather_chestplate = LeatherChestplate
+iron_chestplate = IronChestplate
+fortified_chestplate = FortifiedChestplate
+health_potion = HealthPotion
+super_health_potion = SuperHealthPotion
