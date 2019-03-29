@@ -128,18 +128,18 @@ class SuperHealthPotion(Healing):
 
 
 # ----------------------------------------------------------------------------------------------------------------#
-wooden_sword = WoodenSword
-sharp_sword = SharpSword
-flame_sword = FlameSword
-legendary_sword = LegendarySword
-old_bow = OldBow
-knight_bow = KnightBow
-armour_piercing_bow = ApBow
-leather_helmet = LeatherHelmet
-iron_helmet = IronHelmet
-fortified_helmet = FortifiedHelmet
-leather_chestplate = LeatherChestplate
-iron_chestplate = IronChestplate
-fortified_chestplate = FortifiedChestplate
-health_potion = HealthPotion
-super_health_potion = SuperHealthPotion
+wooden_sword = WoodenSword()
+sharp_sword = SharpSword()
+flame_sword = FlameSword()
+legendary_sword = LegendarySword()
+old_bow = OldBow()
+knight_bow = KnightBow()
+armour_piercing_bow = ApBow()
+leather_helmet = LeatherHelmet()
+iron_helmet = IronHelmet()
+fortified_helmet = FortifiedHelmet()
+leather_chestplate = LeatherChestplate()
+iron_chestplate = IronChestplate()
+fortified_chestplate = FortifiedChestplate()
+health_potion = HealthPotion()
+super_health_potion = SuperHealthPotion()
