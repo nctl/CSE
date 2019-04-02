@@ -1,12 +1,39 @@
 # Classes
 class Room(object):
     # This is a constructor
-    def __init__(self, name, north=None, south=None, east=None, description="INSERT DESCRIPTION HERE"):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description="INSERT DESCRIPTION HERE"):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
+        self.west = west
         self.description = description
+
+
+room_1 = Room("Start", None, None, None, None)
+# Start Left
+room_2 = Room("REDACTED", None, None, room_1, None)
+room_3 = Room("REDACTED", None, None, room_2, None)
+room_4 = Room("REDACTED", None, room_3, None, None)
+room_5 = Room("REDACTED", None, None, None, None)
+room_6 = Room("REDACTED", None, None, None, None)
+room_7 = Room("REDACTED", None, None, None, None)
+room_8 = Room("REDACTED", None, None, None, None)
+room_9 = Room("REDACTED", None, None, None, None)
+# -------------------------------------------------------------------------------------------------------- #
+# Start Right
+# -------------------------------------------------------------------------------------------------------- #
+room_10 = Room("REDACTED", None, None, None, None)
+room_11 = Room("REDACTED", None, None, None, None)
+room_12 = Room("REDACTED", None, None, None, None)
+room_13 = Room("REDACTED", None, None, None, None)
+room_14 = Room("REDACTED", None, None, None, None)
+room_15 = Room("REDACTED", None, None, None, None)
+
+room_1.west = room_2
+room_2.west = room_3
+room_3.north = room_4
+# -------------------------------------------------------------------------------------------------------- #
 
 
 class Item(object):
@@ -178,8 +205,24 @@ class Character(object):
 
 
 class Player(Character):
-    def __init__(self, name, health, weapon, armour):
+    def __init__(self, name, health, weapon, armour, starting_location):
         super(Player, self).__init__(name, health, weapon, armour)
+        self.inventory = []
+        self.current_location = starting_location
+
+    def move(self, new_location):
+        """
+        :param new_location:
+        """
+        self.current_location = new_location
+
+    def find_room(self, direction):
+        """
+        :param direction:
+        :return:
+        """
+        room_name = getattr(self.current_location, direction)
+        return globals()[room_name]
 
 
 class Enemy(Character):
@@ -211,7 +254,7 @@ super_health_potion = SuperHealthPotion()
 # -------------------------------------------------------------------------------------------------------- #
 # Characters and Mobs
 
-player = Player("0", 150, Melee("Bare Fists", 1), Armour("unequipped", 0))
+player = Player("Human", 150, Melee("Bare Fists", 1), Armour("unequipped", 0), room_1)
 
 weakest_enemy = Enemy("1", 17, Melee("Stick", 4), Armour("unequipped", 0))
 weak_enemy = Enemy("6", 44, Melee("Improved Stick", 9), Armour("unequipped", 0))
@@ -228,7 +271,7 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-"""
+
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -242,15 +285,14 @@ while playing:
     elif "take" in command:
         item_name = command[5:]
         found_item = None
-        for item in player.current_locations.items:
-            if item.name == "???":
+        for item in player.current_location.items:
+            if item == item_name:
                 found_item = item
                 
-        if found_item =! None:
+        if found_item is not None:
             player.inventory.append(found_item)
             player.current_location.items.remove(found_item)
     else:
         print("Command not recognized.")
-"""
 
 # -------------------------------------------------------------------------------------------------------- #

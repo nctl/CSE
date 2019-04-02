@@ -8,12 +8,9 @@ class Room(object):
         self.description = description
 
 
-"""
-Example
 R19A = Room("Mr. Wiebe's Room")
 parking_lot = Room("The Parking Lot", None, R19A)
 R19A.north = parking_lot
-"""
 
 library = Room("Library", None, None, None, None, "Desc.")
 quad = Room("Name", None, None, None, None, "Desc.")
