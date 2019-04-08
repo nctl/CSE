@@ -10,29 +10,45 @@ class Room(object):
         self.description = description
 
 
-room_1 = Room("Start", None, None, None, None)
-# Start Left
-room_2 = Room("REDACTED", None, None, room_1, None)
-room_3 = Room("REDACTED", None, None, room_2, None)
-room_4 = Room("REDACTED", None, room_3, None, None)
-room_5 = Room("REDACTED", None, None, None, None)
-room_6 = Room("REDACTED", None, None, None, None)
-room_7 = Room("REDACTED", None, None, None, None)
-room_8 = Room("REDACTED", None, None, None, None)
-room_9 = Room("REDACTED", None, None, None, None)
-# -------------------------------------------------------------------------------------------------------- #
-# Start Right
-# -------------------------------------------------------------------------------------------------------- #
-room_10 = Room("REDACTED", None, None, None, None)
-room_11 = Room("REDACTED", None, None, None, None)
-room_12 = Room("REDACTED", None, None, None, None)
-room_13 = Room("REDACTED", None, None, None, None)
-room_14 = Room("REDACTED", None, None, None, None)
-room_15 = Room("REDACTED", None, None, None, None)
+cave_1 = Room("Start", None, None, None, None)
+cave_2 = Room("A dark cave", None, None, cave_1, None)
+your_house = Room("Your House", None, None, cave_2, None)
+field_1 = Room("An open field", None, your_house, None, None)
+field_2 = Room("An open field", None, None, field_1, None)
+ruined_house = Room("Abandoned House", None, None, field_2, None)
+starting_chest = Room("", None, field_2, None, None)
+castle_door = Room("Castle Entrance", None, starting_chest, None, None)
+entrance_1 = Room("", None, None, None, None)
+room_9 = Room("", entrance_1, None, None, None)
+room_10 = Room("", None, None, room_9, None)
+room_11 = Room("", None, room_10, None, None)
+room_12 = Room("", room_11, None, room_10, None)
+room_13 = Room("", None, None, room_12, None)
+room_14 = Room("", None, None, None, None)
+room_15 = Room("", None, None, None, None)
+room_16 = Room("", None, None, None, None)
+room_17 = Room("", None, None, None, None)
+room_18 = Room("", None, None, None, None)
+room_19 = Room("", None, None, None, None)
+room_20 = Room("", None, None, None, None)
 
-room_1.west = room_2
-room_2.west = room_3
-room_3.north = room_4
+cave_1.west = cave_2
+cave_2.west = your_house
+your_house.north = field_1
+field_1.west = field_2
+field_2.west = ruined_house
+field_2.north = starting_chest
+starting_chest.north = castle_door
+castle_door.west = entrance_1  # This is a one-way
+entrance_1.south = room_9
+room_9.west = room_10
+room_10.north = room_11
+room_10.west = room_12
+room_11.south = room_12
+room_12.west = room_13
+room_13.south = room_14
+room_14.south = room_16
+room_14.west = room_15
 # -------------------------------------------------------------------------------------------------------- #
 
 
@@ -264,7 +280,6 @@ fast_enemy = Enemy("3", 9, Melee("?", 64), Armour("Light Armour", 3))
 ranged_enemy = Enemy("4", 41, Ranged("Fast Bow", 11), Armour("Leather Chestplate", 7))
 boss1 = Enemy("+", 450, Melee("a BIG plane", 69), Armour("Boss Armour", 20))
 # -------------------------------------------------------------------------------------------------------- #
-# use a house as a map??
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 
