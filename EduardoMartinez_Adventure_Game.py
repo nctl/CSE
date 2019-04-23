@@ -172,7 +172,7 @@ class Player(Character):
     def __init__(self, name, health, weapon, armour):
         super(Player, self).__init__(name, health, weapon, armour)
         self.inventory = [health_potion]  # infinite inventory, start with 1 health potion
-        self.current_location = your_house
+        self.current_location = cave_1
         self.arrows = 7
 
     def move(self, new_location):
@@ -192,15 +192,15 @@ class Player(Character):
     def consume_arrow(self):
         if self.weapon in Ranged:
             while self.attack:
-                if self.arrows > 1:
-                    self.arrows -= 1
+                if self.arrows <= 0:
+                    self.weapon = Melee("Bare Fists", 1)
 
                 elif self.arrows == 1:
                     self.arrows = 0
                     print("You are out of arrows. You can no longer use any bows.")
 
                 else:
-                    self.weapon = Melee("Bare Fists", 1)
+                    self.arrows -= 1
 
 
 class Enemy(Character):
@@ -234,13 +234,13 @@ super_health_potion = SuperHealthPotion()
 # Characters and Mobs
 
 weakest_enemy = Enemy("Punching Bag", 12, Melee("itself", 0), Armour("unequipped", 0))
-weak_enemy = Enemy("Goblin", 46, Melee("Wooden Stick", 8), Armour("unequipped", 0))
-basic_enemy1 = Enemy("Skeleton", 78, Melee("Bone Club", 14), Armour("Light Armour", 2))
-basic_enemy2 = Enemy("Skeleton", 84, Melee("Bone Club", 15), Armour("Light Armour", 3))
-bulky_enemy = Enemy("Giant", 127, Melee("Large Axe", 24), Armour("\/", 10))
-fast_enemy = Enemy("Spiked Bug", 9, Melee("Spikes", 55), Armour("Light Armour", 2))
-ranged_enemy = Enemy("Castle Guard", 41, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
-boss1 = Enemy("Dragon", 400, Melee("a BIG fireball", 36), Armour("Boss Armour", 17))
+weak_enemy = Enemy("Goblin", 36, Melee("Wooden Stick", 5), Armour("unequipped", 0))
+basic_enemy1 = Enemy("Skeleton", 68, Melee("Bone Club", 8), Armour("Light Armour", 2))
+basic_enemy2 = Enemy("Skeleton", 74, Melee("Bone Club", 11), Armour("Light Armour", 3))
+bulky_enemy = Enemy("Giant", 116, Melee("Large Axe", 17), Armour("\/", 11))
+fast_enemy = Enemy("Spiked Bug", 20, Melee("Spikes", 48), Armour("Light Armour", 2))
+ranged_enemy = Enemy("Castle Guard", 31, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
+boss1 = Enemy("Dragon", 333, Melee("a BIG fireball", 36), Armour("Boss Armour", 10))
 # -------------------------------------------------------------------------------------------------------- #
 # Rooms
 
@@ -262,7 +262,7 @@ cave_1 = Room("A dark cave", None, None, None, None, "None")
 cave_2 = Room("A dark cave", None, None, cave_1, None,
               "There appears to be an exit from this cave.")
 your_house = Room("Your House", None, None, cave_2, None,
-                  "", wooden_sword)
+                  "This is your home.", wooden_sword)
 field_1 = Room("An open field", None, your_house, None, None,
                "", None, weakest_enemy)
 field_2 = Room("An open field", None, None, field_1, None,
@@ -273,20 +273,20 @@ starting_chest = Room("Small Hills", None, field_2, None, None,
                       "There is an open box here", basic_bow)
 castle_door = Room("Castle Entrance", None, starting_chest, None, None,
                    "A tall wooden door west leads the way to a castle.", sharp_sword)
-room_9 = Room("Castle Exit", None, None, None, None,
-              "The door behind you is locked shut.", None)
-hall = Room("Hall", None, None, room_9, None,
+castle_door2 = Room("Castle Exit", None, None, None, None,
+                    "The door behind you is locked shut.", None)
+hall = Room("Hall", None, None, castle_door2, None,
             "None", None, basic_enemy2)
 gate = Room("The Gate", None, hall, None, None,
             "An open gate north from you can be seen along with a hostile dragon.", knight_bow)
 staircase = Room("Staircase", gate, None, hall, None,
-                 "None", None)
-room_13 = Room("", None, None, staircase, None,
-               "None", flame_sword, fast_enemy)
-room_14 = Room("", room_13, None, None, None,
-               "None", None)
+                 "None", health_potion, None)
+throne_room = Room("Throne Room", None, None, staircase, None,
+                   "None", None, fast_enemy)
+room_14 = Room("A Two-Way Hall", throne_room, None, None, None,
+               "None", flame_sword, None)
 dungeon = Room("Dungeon", None, None, room_14, None,
-               "None", fortified_helmet, bulky_enemy)
+               "There are decayed bones at the edge of the room.", fortified_helmet, bulky_enemy)
 storage_room = Room("Storage Room", room_14, None, None, None,
                     "None", iron_chestplate, ranged_enemy)
 forest = Room("Forest", None, None, None, castle_door,
@@ -305,35 +305,41 @@ field_2.west = ruined_house
 field_2.north = starting_chest
 starting_chest.north = castle_door
 castle_door.east = forest
-castle_door.west = room_9
-room_9.west = hall
+castle_door.west = castle_door2
+castle_door2.west = hall
 hall.north = gate
 hall.west = staircase
 gate.west = staircase
 gate.north = end
-staircase.west = room_13
-room_13.south = room_14
+staircase.west = throne_room
+throne_room.south = room_14
 room_14.south = storage_room
 room_14.west = dungeon
 forest.south = statue
 forest.east = field_3
 
-the_player = Player("yourself", 200, Melee("Bare Fists", 1), Armour("unequipped", 0))
+the_player = Player("you", 200, Melee("Bare Fists", 1), Armour("unequipped", 0))
 # -------------------------------------------------------------------------------------------------------- #
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 
 while playing:
-    print(the_player.current_location.name)
-    print(the_player.current_location.description)
+    if the_player.health <= 0:
+        print("Game Over!")
+        playing = False
+    print()
     print("Current inventory:")
     for item in the_player.inventory:
         print(item.name)
     print()
+    print(the_player.current_location.name)
+    print(the_player.current_location.description)
     print("You have %d HP remaining." % the_player.health)
+    print("You have %d arrows left." % the_player.arrows)
     if the_player.current_location.item is not None:
         print("There is a(n) %s on the ground." % the_player.current_location.item.name)
-
+    if the_player.current_location.enemies is not None:
+        print("%s stands, blocking your path." % the_player.current_location.enemies.name)
     if boss1.health <= 0:
         print("Congrats! You're Winner!")
         playing = False
@@ -342,15 +348,18 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
-        try:
-            next_room = the_player.find_room(command)
-            if next_room is None:
-                raise AttributeError
-            the_player.move(next_room)
-        except AttributeError:
-            print("I can't go that way.")
-        except KeyError:
-            print("I can't go that way.")
+        if the_player.current_location.enemies is not None:
+            print("There is someone blocking your path")
+        else:
+            try:
+                next_room = the_player.find_room(command)
+                if next_room is None:
+                    raise AttributeError
+                the_player.move(next_room)
+            except AttributeError:
+                print("I can't go that way.")
+            except KeyError:
+                print("I can't go that way.")
 
     elif "heal" in command:
         if health_potion in the_player.inventory:
@@ -371,8 +380,12 @@ while playing:
             the_player.inventory.append(found_item)
             the_player.current_location.item = None
 
-    elif "attack" in command:
+    elif "attack" in command and the_player.current_location.enemies is not None:
         the_player.attack(the_player.current_location.enemies)
+        if the_player.current_location.enemies.health <= 0:
+            the_player.current_location.enemies = None
+        else:
+            the_player.current_location.enemies.attack(the_player)
 
     elif "equip" in command:
         equippable_item = command[6:]
@@ -388,7 +401,4 @@ while playing:
         print("Command not recognized.")
 
 # -------------------------------------------------------------------------------------------------------- #
-"""
-Learn to:
-- Attack via command
-"""
+# game is finished
