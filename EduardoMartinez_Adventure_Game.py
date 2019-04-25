@@ -173,7 +173,7 @@ class Player(Character):
         super(Player, self).__init__(name, health, weapon, armour)
         self.inventory = [health_potion]  # infinite inventory, start with 1 health potion
         self.current_location = cave_1
-        self.arrows = 8
+        self.arrows = 7
 
     def move(self, new_location):
         """
@@ -191,14 +191,16 @@ class Player(Character):
 
     def consume_arrow(self):
         if self.weapon in Ranged:
-            while command is "attack":
-                self.arrows -= 1
+            while self.attack:
                 if self.arrows <= 0:
                     self.weapon = Melee("Bare Fists", 1)
 
                 elif self.arrows == 1:
+                    self.arrows = 0
                     print("You are out of arrows. You can no longer use any bows.")
 
+                else:
+                    self.arrows -= 1
 
 
 class Enemy(Character):
@@ -232,8 +234,8 @@ super_health_potion = SuperHealthPotion()
 # Characters and Mobs
 
 weakest_enemy = Enemy("Punching Bag", 12, Melee("itself", 0), Armour("unequipped", 0))
-weak_enemy = Enemy("Goblin", 27, Melee("Wooden Stick", 5), Armour("unequipped", 0))
-basic_enemy1 = Enemy("Skeleton", 65, Melee("Bone Club", 8), Armour("Light Armour", 2))
+weak_enemy = Enemy("Goblin", 36, Melee("Wooden Stick", 5), Armour("unequipped", 0))
+basic_enemy1 = Enemy("Skeleton", 68, Melee("Bone Club", 8), Armour("Light Armour", 2))
 basic_enemy2 = Enemy("Skeleton", 74, Melee("Bone Club", 11), Armour("Light Armour", 3))
 bulky_enemy = Enemy("Giant", 116, Melee("Large Axe", 17), Armour("\/", 11))
 fast_enemy = Enemy("Spiked Bug", 20, Melee("Spikes", 48), Armour("Light Armour", 2))
