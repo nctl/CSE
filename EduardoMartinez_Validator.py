@@ -27,10 +27,8 @@ def reverse_it(all_digits: list):
 
 
 def multiply_odd_digits(num: str):
-    odd_digits = []
-    odd_digits = all_digits(int(num[num % 2 == 1]))
-    for i in odd_digits:
-        int(odd_digits) * 2
+    for index in range(len(num)):
+        integer_version = int(num[index])
 
 
 def subtract_large_numbers(num: str):
