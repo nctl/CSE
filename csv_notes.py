@@ -42,6 +42,14 @@ def validate(num: str):
     return False
 
 
+def reverse(string):
+    string = string[::-1]
+    return string
+
+
+print(reverse("dlroW olleH"))
+
+
 with open("Book1.csv", 'r') as old_csv:
     with open("MyNewFile.csv", 'w', newline='') as new_csv:
         reader = csv.reader(old_csv)
