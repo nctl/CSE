@@ -16,7 +16,8 @@ import csv
 #         for row in reader:
 #             old_number = row[0]
 #             first_number = int(old_number[0])
-#             if first_number % 3 == 0:
+#
+#            if first_number % 3 == 0:
 #                 writer.writerow(row)
 #         print("Done")
 #         print("Check file (MyNewFile).")
