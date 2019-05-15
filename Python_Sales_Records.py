@@ -1,5 +1,5 @@
 import csv
-# DO LINE 178!!
+
 with open("Sales Records.csv", 'r') as old_csv:
     reader = csv.reader(old_csv)
     fruits_profit_list = []
@@ -32,7 +32,7 @@ with open("Sales Records.csv", 'r') as old_csv:
     snacks_units = []
     personal_care_units = []
     household_units = []
-    baby_food_units= []
+    baby_food_units = []
     vegetables_units = []
     cereal_units = []
 
@@ -45,7 +45,7 @@ with open("Sales Records.csv", 'r') as old_csv:
         if category == "Fruits":
             #  print(region, category, profit)
             fruits_profit_list.append(float(profit))
-            fruits_units.append(int(profit))
+            fruits_units.append(int(units_sold))
 
         if category == "Clothes":
             #  print(region, category, profit)
@@ -156,26 +156,22 @@ household_total_units = sum(household_units)
 baby_food_total_units = sum(baby_food_units)
 vegetables_total_units = sum(vegetables_units)
 cereal_total_units = sum(cereal_units)
-
-
-list_of_c_sums = [fruits_sum, clothes_sum, meat_sum, beverages_sum, office_supplies_sum, cosmetics_sum,
-                  snacks_sum, personal_care_sum, household_sum, baby_food_sum, vegetables_sum, cereal_sum]
-list_of_c_types = ["Fruits", "Clothes", "Meat", "Beverages", "Office Supplies", "Cosmetics",
-                   "Snacks", "Personal Care", "Household", "Baby Food", "Vegetables", "Cereal"]
-index = list_of_c_sums.index(max(list_of_c_sums))
-print("The top category is %s." % list_of_c_types[index])
-
-
-list_of_r_sums = [sub_saharan_africa_sum, mideast_and_north_africa_sum, oceania_sum,
-                  europe_sum, asia_sum, c_america_and_caribbean_sum, n_america_sum]
-list_of_r_types = ["Sub-Saharan Africa", "Middle East and North Africa", "Australia and Oceania",
-                   "Europe", "Asia", "Central America and the Caribbean", "North America"]
-index = list_of_r_sums.index(max(list_of_r_sums))
-print("The top region is %s." % list_of_r_types[index])
-
-
-# TO DO
-
+"""
+Unused
+fruit_orders = len(fruits_units)
+clothes_orders = len(clothes_units)
+meat_orders = len(meat_units)
+beverages_orders = len(beverages_units)
+office_supplies_orders = len(office_supplies_units)
+cosmetics_orders = len(cosmetics_units)
+snacks_orders = len(snacks_units)
+personal_care_orders = len(personal_care_units)
+household_orders = len(household_units)
+baby_food_orders = len(baby_food_units)
+vegetables_orders = len(vegetables_units)
+cereal_orders = len(cereal_units)
+Unused
+"""
 print("The total profit for the Fruits category is %f" % fruits_sum)
 print("The total profit for the Clothes category is %f" % clothes_sum)
 print("The total profit for the Meat category is %f" % meat_sum)
@@ -197,15 +193,43 @@ print("The total profit for the Asia region is %f" % asia_sum)
 print("The total profit for the Central America and the Caribbean region is %f" % c_america_and_caribbean_sum)
 print("The total profit for the North America region is %f" % n_america_sum)
 print()
-# print("The average profit per unit for the Fruits category is %f" % )
-# print("The average profit per unit for the Clothes category is %f" % )
-# print("The average profit per unit for the Meat category is %f" % )
-# print("The average profit per unit for the Beverages category is %f" % )
-# print("The average profit per unit for the Office Supplies category is %f" % )
-# print("The average profit per unit for the Cosmetics category is %f" % )
-# print("The average profit per unit for the Snacks category is %f" % )
-# print("The average profit per unit for the Personal Care category is %f" % )
-# print("The average profit per unit for the Baby Food category is %f" % )
-# print("The average profit per unit for the Vegetables category is %f" % )
-# print("The average profit per unit for the Cereal category is %f" % )
-print()
+
+fruits_unit_average = fruits_sum / fruits_total_units
+clothes_unit_average = clothes_sum / clothes_total_units
+meat_unit_average = meat_sum / meat_total_units
+beverages_unit_average = beverages_sum / beverages_total_units
+office_supplies_unit_average = office_supplies_sum / office_supplies_total_units
+cosmetics_unit_average = cosmetics_sum / cosmetics_total_units
+snacks_unit_average = snacks_sum / snacks_total_units
+personal_care_unit_average = personal_care_sum / personal_care_total_units
+household_unit_average = household_sum / household_total_units
+baby_food_unit_average = baby_food_sum / baby_food_total_units
+vegetables_unit_average = vegetables_sum / vegetables_total_units
+cereal_unit_average = cereal_sum / cereal_total_units
+
+print("The average profit per unit for the Fruits category is %f" % fruits_unit_average)
+print("The average profit per unit for the Clothes category is %f" % clothes_unit_average)
+print("The average profit per unit for the Meat category is %f" % meat_unit_average)
+print("The average profit per unit for the Beverages category is %f" % beverages_unit_average)
+print("The average profit per unit for the Office Supplies category is %f" % office_supplies_unit_average)
+print("The average profit per unit for the Cosmetics category is %f" % cosmetics_unit_average)
+print("The average profit per unit for the Snacks category is %f" % snacks_unit_average)
+print("The average profit per unit for the Personal Care category is %f" % personal_care_unit_average)
+print("The average profit per unit for the Baby Food category is %f" % baby_food_unit_average)
+print("The average profit per unit for the Vegetables category is %f" % vegetables_unit_average)
+print("The average profit per unit for the Cereal category is %f" % cereal_unit_average)
+
+list_of_c_sums = [fruits_sum, clothes_sum, meat_sum, beverages_sum, office_supplies_sum, cosmetics_sum,
+                  snacks_sum, personal_care_sum, household_sum, baby_food_sum, vegetables_sum, cereal_sum]
+list_of_c_types = ["Fruits", "Clothes", "Meat", "Beverages", "Office Supplies", "Cosmetics",
+                   "Snacks", "Personal Care", "Household", "Baby Food", "Vegetables", "Cereal"]
+index = list_of_c_sums.index(max(list_of_c_sums))
+print("The top category is %s." % list_of_c_types[index])
+
+
+list_of_r_sums = [sub_saharan_africa_sum, mideast_and_north_africa_sum, oceania_sum,
+                  europe_sum, asia_sum, c_america_and_caribbean_sum, n_america_sum]
+list_of_r_types = ["Sub-Saharan Africa", "Middle East and North Africa", "Australia and Oceania",
+                   "Europe", "Asia", "Central America and the Caribbean", "North America"]
+index = list_of_r_sums.index(max(list_of_r_sums))
+print("The top region is %s." % list_of_r_types[index])

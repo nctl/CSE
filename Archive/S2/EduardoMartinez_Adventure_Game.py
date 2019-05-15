@@ -191,7 +191,7 @@ class Player(Character):
 
     def consume_arrow(self):
         if self.weapon in Ranged:
-            while self.attack:
+            if self.attack:
                 if self.arrows <= 0:
                     self.weapon = Melee("Bare Fists", 1)
 
@@ -264,7 +264,7 @@ cave_2 = Room("A dark cave", None, None, cave_1, None,
 your_house = Room("Your House", None, None, cave_2, None,
                   "This is your home.", wooden_sword)
 field_1 = Room("An open field", None, your_house, None, None,
-               "", None, weakest_enemy)
+               "Don't forget to equip your sword with [equip {Item}]", None, weakest_enemy)
 field_2 = Room("An open field", None, None, field_1, None,
                "A dilapidated house can be seen west.", None)
 ruined_house = Room("Abandoned House", None, None, field_2, None,
