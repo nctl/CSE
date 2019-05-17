@@ -173,7 +173,7 @@ class Player(Character):
         super(Player, self).__init__(name, health, weapon, armour)
         self.inventory = [health_potion]  # infinite inventory, start with 1 health potion
         self.current_location = cave_1
-        self.arrows = 7
+        self.arrows = 8
 
     def move(self, new_location):
         """
@@ -189,18 +189,27 @@ class Player(Character):
         room_name = getattr(self.current_location, direction)
         return room_name
 
-    def consume_arrow(self):
-        if self.weapon in Ranged:
-            if self.attack:
-                if self.arrows <= 0:
-                    self.weapon = Melee("Bare Fists", 1)
+    def attack(self, target):
+        if issubclass(type(self.weapon), Ranged):
+            if self.arrows <= 0:
+                self.weapon = Melee("Bare Fists", 1)
 
-                elif self.arrows == 1:
-                    self.arrows = 0
-                    print("You are out of arrows. You can no longer use any bows.")
+            elif self.arrows == 1:
+                print("%s attacks %s for %d damage" %
+                      (self.name, target.name, self.weapon.damage))
+                target.take_damage(self.weapon.damage)
+                self.arrows = 0
+                print("You are out of arrows. You can no longer use any bows.")
 
-                else:
-                    self.arrows -= 1
+            else:
+                self.arrows -= 1
+                print("%s attacks %s for %d damage" %
+                      (self.name, target.name, self.weapon.damage))
+                target.take_damage(self.weapon.damage)
+        else:
+            print("%s attacks %s for %d damage" %
+                  (self.name, target.name, self.weapon.damage))
+            target.take_damage(self.weapon.damage)
 
 
 class Enemy(Character):
@@ -234,13 +243,13 @@ super_health_potion = SuperHealthPotion()
 # Characters and Mobs
 
 weakest_enemy = Enemy("Punching Bag", 12, Melee("itself", 0), Armour("unequipped", 0))
-weak_enemy = Enemy("Goblin", 36, Melee("Wooden Stick", 5), Armour("unequipped", 0))
-basic_enemy1 = Enemy("Skeleton", 68, Melee("Bone Club", 8), Armour("Light Armour", 2))
-basic_enemy2 = Enemy("Skeleton", 74, Melee("Bone Club", 11), Armour("Light Armour", 3))
-bulky_enemy = Enemy("Giant", 116, Melee("Large Axe", 17), Armour("\/", 11))
-fast_enemy = Enemy("Spiked Bug", 20, Melee("Spikes", 48), Armour("Light Armour", 2))
-ranged_enemy = Enemy("Castle Guard", 31, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
-boss1 = Enemy("Dragon", 333, Melee("a BIG fireball", 36), Armour("Boss Armour", 10))
+weak_enemy = Enemy("Goblin", 26, Melee("Wooden Stick", 5), Armour("unequipped", 0))
+basic_enemy1 = Enemy("Skeleton", 58, Melee("Bone Club", 8), Armour("Light Armour", 2))
+basic_enemy2 = Enemy("Skeleton", 64, Melee("Bone Club", 11), Armour("Light Armour", 3))
+bulky_enemy = Enemy("Giant", 106, Melee("Large Axe", 17), Armour("Aaaa", 11))
+fast_enemy = Enemy("Spiked Bug", 29, Melee("Spikes", 38), Armour("Light Armour", 2))
+ranged_enemy = Enemy("Castle Guard", 44, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
+boss1 = Enemy("Dragon", 222, Melee("a BIG fireball", 24), Armour("Boss Armour", 7))
 # -------------------------------------------------------------------------------------------------------- #
 # Rooms
 
@@ -397,8 +406,11 @@ while playing:
             if isinstance(equippable_item, Armour):
                 the_player.armour = equippable_item
                 print("Your new equipped armour is %s" % the_player.armour.name)
+    elif command == "nctl":
+        the_player.weapon = legendary_sword
+        the_player.health = 999
+        print("Thx 4 teh shoutout. Here's the best wepen EVR!!!")
     else:
         print("Command not recognized.")
 
 # -------------------------------------------------------------------------------------------------------- #
-# game is finished

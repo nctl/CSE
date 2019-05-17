@@ -156,22 +156,8 @@ household_total_units = sum(household_units)
 baby_food_total_units = sum(baby_food_units)
 vegetables_total_units = sum(vegetables_units)
 cereal_total_units = sum(cereal_units)
-"""
-Unused
-fruit_orders = len(fruits_units)
-clothes_orders = len(clothes_units)
-meat_orders = len(meat_units)
-beverages_orders = len(beverages_units)
-office_supplies_orders = len(office_supplies_units)
-cosmetics_orders = len(cosmetics_units)
-snacks_orders = len(snacks_units)
-personal_care_orders = len(personal_care_units)
-household_orders = len(household_units)
-baby_food_orders = len(baby_food_units)
-vegetables_orders = len(vegetables_units)
-cereal_orders = len(cereal_units)
-Unused
-"""
+
+
 print("The total profit for the Fruits category is %f" % fruits_sum)
 print("The total profit for the Clothes category is %f" % clothes_sum)
 print("The total profit for the Meat category is %f" % meat_sum)
