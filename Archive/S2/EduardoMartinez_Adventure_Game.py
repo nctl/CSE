@@ -24,7 +24,7 @@ class WoodenSword(Melee):
 
 class Crowbar(Melee):
     def __init__(self):
-        super(Crowbar, self).__init__("Crowbar", 12)
+        super(Crowbar, self).__init__("Crowbar", 10)
 
 
 class SharpSword(Melee):
@@ -34,12 +34,12 @@ class SharpSword(Melee):
 
 class BattleAxe(Melee):
     def __init__(self):
-        super(BattleAxe, self).__init__("Battle Axe", 22)
+        super(BattleAxe, self).__init__("Battle Axe", 19)
 
 
 class FlameSword(Melee):
     def __init__(self):
-        super(FlameSword, self).__init__("Flame Sword", 28)
+        super(FlameSword, self).__init__("Flame Sword", 21)
 
 
 class LegendarySword(Melee):
@@ -64,7 +64,7 @@ class BasicBow(Ranged):
 
 class KnightBow(Ranged):
     def __init__(self):
-        super(KnightBow, self).__init__("Knight's Bow", 22)
+        super(KnightBow, self).__init__("Knight's Bow", 26)
 
 
 class Rifle(Ranged):
@@ -74,7 +74,7 @@ class Rifle(Ranged):
 
 class ApBow(Ranged):
     def __init__(self):
-        super(ApBow, self).__init__("Armour Piercing Bow", 37)
+        super(ApBow, self).__init__("Armour Piercing Bow", 33)
     
 
 class Armour(Item):
@@ -90,7 +90,7 @@ class Helmet(Armour):
 
 class LeatherHelmet(Helmet):
     def __init__(self):
-        super(LeatherHelmet, self).__init__("Leather Helmet", 3)
+        super(LeatherHelmet, self).__init__("Leather Helmet", 2)
 
 
 class IronHelmet(Helmet):
@@ -100,7 +100,7 @@ class IronHelmet(Helmet):
 
 class FortifiedHelmet(Helmet):
     def __init__(self):
-        super(FortifiedHelmet, self).__init__("Fortified Helmet", 12)
+        super(FortifiedHelmet, self).__init__("Fortified Helmet", 9)
 
 
 class Chestplate(Armour):
@@ -110,17 +110,17 @@ class Chestplate(Armour):
 
 class LeatherChestplate(Chestplate):
     def __init__(self):
-        super(LeatherChestplate, self).__init__("Leather Chestplate", 7)
+        super(LeatherChestplate, self).__init__("Leather Chestplate", 4)
 
 
 class IronChestplate(Chestplate):
     def __init__(self):
-        super(IronChestplate, self).__init__("Iron Chestplate", 13)
+        super(IronChestplate, self).__init__("Iron Chestplate", 7)
 
 
 class FortifiedChestplate(Chestplate):
     def __init__(self):
-        super(FortifiedChestplate, self).__init__("Fortified Chestplate", 19)
+        super(FortifiedChestplate, self).__init__("Fortified Chestplate", 12)
 
 
 class Consumable(Item):
@@ -173,7 +173,7 @@ class Player(Character):
         super(Player, self).__init__(name, health, weapon, armour)
         self.inventory = [health_potion]  # infinite inventory, start with 1 health potion
         self.current_location = cave_1
-        self.arrows = 8
+        self.arrows = 7
 
     def move(self, new_location):
         """
@@ -192,7 +192,7 @@ class Player(Character):
     def attack(self, target):
         if issubclass(type(self.weapon), Ranged):
             if self.arrows <= 0:
-                self.weapon = Melee("Bare Fists", 1)
+                self.weapon = Melee("Bare Fists", 2)
 
             elif self.arrows == 1:
                 print("%s attacks %s for %d damage" %
@@ -247,8 +247,8 @@ weak_enemy = Enemy("Goblin", 26, Melee("Wooden Stick", 5), Armour("unequipped", 
 basic_enemy1 = Enemy("Skeleton", 58, Melee("Bone Club", 8), Armour("Light Armour", 2))
 basic_enemy2 = Enemy("Skeleton", 64, Melee("Bone Club", 11), Armour("Light Armour", 3))
 bulky_enemy = Enemy("Giant", 106, Melee("Large Axe", 17), Armour("Aaaa", 11))
-fast_enemy = Enemy("Spiked Bug", 29, Melee("Spikes", 38), Armour("Light Armour", 2))
-ranged_enemy = Enemy("Castle Guard", 44, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
+fast_enemy = Enemy("Spiked Bug", 24, Melee("Spikes", 38), Armour("Light Armour", 2))
+ranged_enemy = Enemy("Castle Guard", 47, Ranged("Steel Bow", 15), Armour("Leather Chestplate", 5))
 boss1 = Enemy("Dragon", 222, Melee("a BIG fireball", 24), Armour("Boss Armour", 7))
 # -------------------------------------------------------------------------------------------------------- #
 # Rooms
@@ -295,7 +295,7 @@ throne_room = Room("Throne Room", None, None, staircase, None,
 room_14 = Room("A Two-Way Hall", throne_room, None, None, None,
                "None", flame_sword, None)
 dungeon = Room("Dungeon", None, None, room_14, None,
-               "There are decayed bones at the edge of the room.", fortified_helmet, bulky_enemy)
+               "There are decayed bones at the edge of the room.", armour_piercing_bow, bulky_enemy)
 storage_room = Room("Storage Room", room_14, None, None, None,
                     "None", iron_chestplate, ranged_enemy)
 forest = Room("Forest", None, None, None, castle_door,
@@ -304,7 +304,7 @@ statue = Room("Ancient Statue", forest, None, None, None,
               "A statue wearing a leather chestplate can be seen.", leather_chestplate)
 field_3 = Room("Forest Edge", None, None, None, forest,
                "None", health_potion)
-end = Room("", None, None, None, None, "None", None, boss1)
+end = Room("Boss Room", None, None, None, None, "None", None, boss1)
 
 cave_1.west = cave_2
 cave_2.west = your_house
@@ -327,7 +327,7 @@ room_14.west = dungeon
 forest.south = statue
 forest.east = field_3
 
-the_player = Player("you", 200, Melee("Bare Fists", 1), Armour("unequipped", 0))
+the_player = Player("you", 200, Melee("Bare Fists", 2), Armour("unequipped", 0))
 # -------------------------------------------------------------------------------------------------------- #
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
@@ -405,12 +405,4 @@ while playing:
 
             if isinstance(equippable_item, Armour):
                 the_player.armour = equippable_item
-                print("Your new equipped armour is %s" % the_player.armour.name)
-    elif command == "nctl":
-        the_player.weapon = legendary_sword
-        the_player.health = 999
-        print("Thx 4 teh shoutout. Here's the best wepen EVR!!!")
-    else:
-        print("Command not recognized.")
-
 # -------------------------------------------------------------------------------------------------------- #
